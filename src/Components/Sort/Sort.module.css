@@ -1,0 +1,67 @@
+.btn {
+  padding: 2px 8px;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
+  font: 400 12px/14px 'robotoregular', arial, helvetica, sans-serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+.btn_active {
+  padding: 2px 8px;
+  background: #356EFF;
+  border-radius: 23px;
+  color: #fff;
+}
+
+.btn_active:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+.items_count {
+  font: 400 12px/14px 'robotoregular', arial, helvetica, sans-serif;
+  margin: 0 0 0 3px;
+  color: #356EFF;
+}
+
+.btn_active .items_count{
+  color: #fff;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('./fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('./fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media (max-width: 364px) {
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+}

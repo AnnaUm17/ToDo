@@ -1,0 +1,171 @@
+.wrap {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user_card {
+  font: 400 12px/12px 'robotoregular', arial, helvetica, sans-serif;
+  position: relative;
+  margin: 0 0 14px 0;
+  padding: 14px;
+  width: 100%;
+  height: 230px;
+  box-sizing: border-box;
+}
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000;
+}
+
+.inner {
+  font: 400 12px/12px 'robotoregular', arial, helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  margin: 0 35px 0 0;
+  height: 202px;
+  width: 202px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 68%;
+}
+
+.description {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.name {
+  font: 700 28px/28px 'robotobold', arial, helvetica, sans-serif;
+  margin: 0;
+  color: #000;
+}
+
+.bio {
+  margin: 0;
+  font: 400 12px/12px 'robotoregular', arial, helvetica, sans-serif;
+  color: #999;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: inherit;
+  font: 400 12px/12px 'robotoregular', arial, helvetica, sans-serif;
+  color: #999;
+}
+
+.contact__img {
+  margin: 0 5px 0 0;
+}
+
+.social_networks {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  width: 120px;
+  margin-right: 0;
+}
+
+.social_networks__img  {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.contact:hover,
+.social_networks__img:hover {
+  opacity: .8;
+  transition: .3s;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('./fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 430px) {
+  .user_card {
+    height: 168px;
+  }
+
+  .avatar {
+    height: 140px;
+    width: 140px;
+    margin: 0 20px 0 0;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .social_networks {
+    align-self: stretch;
+    width: 100px;
+  }
+
+  .social_networks__img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .user_card {
+    padding: 8px;
+    height: 156px;
+  }
+
+  .avatar {
+    margin: 0 10px 0 0;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .social_networks {
+    width: 92px;
+  }
+
+  .social_networks__img {
+    width: 18px;
+    height: 18px;
+  }
+}

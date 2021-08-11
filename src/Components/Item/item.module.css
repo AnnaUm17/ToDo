@@ -1,0 +1,110 @@
+.wrap {
+  margin: 0 4px 10px 0;
+  padding: 10px 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 41px;
+}
+
+.wrap:hover {
+  border: 1px solid #356EFF;
+}
+
+.input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  color: #000;
+  font: 400 14px/16px 'robotoregular', arial, helvetica, sans-serif;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox_label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 22px;
+  width: 90%;
+  height: auto;
+}
+
+.checkbox_label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 22px;
+  width: 90%;
+  height: auto;
+}
+
+.checkbox + .checkbox_label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #356EFF;
+  border-radius: 20px;
+}
+
+.checkbox:checked + .checkbox_label:before {
+  background: url('./img/checked.svg') center center no-repeat;
+}
+
+.wrap:hover {
+  cursor: grab;
+}
+
+.checkbox_label:hover,
+.item:hover {
+  cursor: pointer;
+}
+
+.btn_delete {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('./fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('./fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
